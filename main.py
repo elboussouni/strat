@@ -100,7 +100,7 @@ def calculate_loss_support_with_last_lot(plans):
 
             # Track the lot size for the last supported trade
             if cumulative_loss <= -max_loss:
-                losses_supported = n   # Last trade before exceeding the limit
+                losses_supported = n-1  # Last trade before exceeding the limit
                 break
             last_trade_lot_size = L_n
 
